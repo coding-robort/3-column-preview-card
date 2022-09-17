@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+:root {
+  --contents-padding: 30px;
+  --box-radius: 5px;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+  font-size: 15px;
+  font-family: 'Lexend Deca', sans-serif;
+}
+
+.content-box {
+  margin: 20px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content-box img {
+  width: 45px;
+  height: 30px;
+}
+
+.content-box .head {
+  font-size: 1.5rem;
+  color: #f2f2f2;
+  font-family: 'Big Shoulders Display', cursive;
+}
+
+.content-box p.contents {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.content-box button {
+  background-color: #f2f2f2;
+  font-size: .8rem;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  margin-top: 50px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.content-box button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.content-box .left-box {
+  border-top-left-radius: var(--box-radius);
+  background-color: #e38826;
+  padding: var(--contents-padding);
+}
+
+.content-box .left-box button.btn1 {
+  color: #e38826;
+}
+
+.content-box .middle-box {
+  background-color: #006970;
+  padding: var(--contents-padding);
+}
+
+.content-box .middle-box button.btn2 {
+  color: #006970;
+}
+
+.content-box .right-box {
+  background-color: #004241;
+  padding: var(--contents-padding);
+}
+
+.content-box .right-box button.btn3 {
+  color: #004241;
+}
+
+@media (min-width: 1440px) {
+  .content-box {
+    width: 700px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .right-box {
+    border-top-right-radius: var(--box-radius);
+    border-bottom-right-radius: var(--box-radius);
+  }
+  .left-box {
+    border-bottom-left-radius: var(--box-radius);
+  }
+}
+/*# sourceMappingURL=style.css.map */
